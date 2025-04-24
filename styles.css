@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+    padding-top: 30px; 
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: left;
+    background-color: #333;
+    padding: 0px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure the navbar is above other content */
+}
+
+.navbar-button {
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    margin: 0 0px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar-button:hover {
+    background-color: darkcyan;
+}
+
+.content {
+    padding: 20px;
+    padding-left:1.5em;
+}
+
+.content-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px 0;
+}
+
+.text-content {
+    flex: 1; /* Allow text to take available space */
+}
+
+.image-content {
+    flex: 0 0 auto; /* Prevent image from growing or shrinking */
+}
+
+.content-section {
+    display: flex;
+    align-items: flex-start; /* Align items at the top */
+    gap: 20px; /* Space between text and image */
+}
+
+hr.new1{
+    border-top: 5px solid darkcyan;
+    border-radius:5px;
+}
+
+h2{
+    text-decoration: underline;
+    -webkit-text-decoration-color: darkcyan;
+    text-decoration-color: darkcyan;
+    text-decoration-thickness:.3rem;
+}
+
+dt{
+    margin-left:1em;
+}
+
+dl{
+    margin-left:2em;
+}
